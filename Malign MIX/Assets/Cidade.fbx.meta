@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: b6ff311697aeaee4c988514588819900
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balde
+    second: {fileID: 2100000, guid: be8857934fd1fd84c88f54a9b95c3464, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Basculante
+    second: {fileID: 2100000, guid: b22b904bba56d8a4188028c19071f851, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CASA1
+    second: {fileID: 2100000, guid: 9ac5f33210b41d44fb01c8b490ccea48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CASA2
+    second: {fileID: 2100000, guid: 6e4b506667a78d645a2b90d504feee27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CASA3
+    second: {fileID: 2100000, guid: 22ec0c39a7b4df242a731803aa652b9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Cal\xE7ada"
+    second: {fileID: 2100000, guid: d388d5f93d5b46d459022379ef657280, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Casa
+    second: {fileID: 2100000, guid: a8a2acd513f9378449ca32520610dc10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chao
+    second: {fileID: 2100000, guid: 6330d598111a6b44bad05a786da56192, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cimento
+    second: {fileID: 2100000, guid: b45cdb9a6949911499cc0f4c1f59cd6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Janela
+    second: {fileID: 2100000, guid: c5f026164bd4ea6478c196c48b97690f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Madeira
+    second: {fileID: 2100000, guid: 793b9ad71bd7d7b458322bb994dd51fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaderiaBarreira
+    second: {fileID: 2100000, guid: c48754e692a82b74bb22035bf720e177, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 10a2a1747cb8fb247b60be1f70a1e777, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mercado
+    second: {fileID: 2100000, guid: f98c5c7887294b148874f6ce76be44b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Muralzinho
+    second: {fileID: 2100000, guid: cfae3e9f77dd512489bf1381d722868c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Porta
+    second: {fileID: 2100000, guid: e39656f34ca06134084aceb16e487537, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Portao
+    second: {fileID: 2100000, guid: c2d7f975759d21c49b529387e676fefc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rua
+    second: {fileID: 2100000, guid: 348e0e6cfdd50a9409260a0932e18353, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Telhado
+    second: {fileID: 2100000, guid: ddcd3c531a803aa48a3c3e8585feca3c, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 10345049
+    second: {fileID: 2800000, guid: b0575ab951e638646b171d3c0037aa81, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 10486560
+    second: {fileID: 2800000, guid: aa8267a316fb1e44cb47b2632bcd5564, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 13672426-details-of-old-wooden-door-with-rich-wood-texture-and-lots-of-details
+    second: {fileID: 2800000, guid: 087578427df8bb54f8c03de669fb06de, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Azulejo
+    second: {fileID: 2800000, guid: 09b438caae63a5b47bea88f2777ca76f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Basculante
+    second: {fileID: 2800000, guid: c48bd54d8b6dd8345bba219793e19ffc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "Cal\xE7ada"
+    second: {fileID: 2800000, guid: 0fea173eb2dd10745af4e706681b9542, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cimento
+    second: {fileID: 2800000, guid: a81a9a306669e9a42941918e1d259ba1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Lajota
+    second: {fileID: 2800000, guid: 4d598b9262fb22346948b1676f95a77b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pedras
+    second: {fileID: 2800000, guid: 153b860b31943d1428bcd9e1dadeb79f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Porta Sanfonada
+    second: {fileID: 2800000, guid: 53dc143f344f4a646bf0a09fd9627460, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "Port\xE3o"
+    second: {fileID: 2800000, guid: e468afd1435a67e4bb14442622621174, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rua
+    second: {fileID: 2800000, guid: 127a61ddd4463734f930aaae3fb5ddc1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Telha
+    second: {fileID: 2800000, guid: 3b50a69ee662fd141b681927f1527843, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Textura Verde
+    second: {fileID: 2800000, guid: 192f4932db13a524ebcc98940ced8a21, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brick-texture-1193574
+    second: {fileID: 2800000, guid: c0406ce486ff0eb48a6f0235d8993737, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
