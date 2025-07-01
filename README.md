@@ -1,7 +1,7 @@
 # Malign MIX / Untitled Game Jam #112
 <p align="center">
   <a href="https://scenery-games.itch.io/">
-    <img height="200" alt="Scenery Games" src="https://cdn.discordapp.com/attachments/1247820777068171264/1371276953058803845/Scenery-Games-Logo-png.png?ex=685e88ee&is=685d376e&hm=30aaaf18d32bf8f64ce851cd66fa1d8e6ce0c0b303407c3ed48d1f4129355c7a&"/>
+    <img height="200" alt="Scenery Games" src="/Malign MIX/Assets/IMPORTANT/Scenery-Games-Logo-png.png"/>
   <a/>
 <p/>
 
