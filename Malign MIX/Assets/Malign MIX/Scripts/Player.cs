@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     Vector3 playerInputs;
     CharacterController playerController;
     float playerVelocity = 10f;
-    Transform cameraPlayer;
+    [SerializeField] Transform cameraPlayer;
 
 
     bool onGround;
