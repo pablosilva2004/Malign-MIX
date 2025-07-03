@@ -8,6 +8,9 @@ public class Transition : MonoBehaviour
     [SerializeField] TMP_Text textoUI;
     [SerializeField] GameObject city, house;
     [SerializeField] bool transitionMercado, transitionToHouse, playerInside;
+    [SerializeField] Animator transitionAnim;
+    [SerializeField] AudioSource audioPorta;
+    public GameObject jogador;
     void Start()
     {
 
@@ -22,18 +25,40 @@ public class Transition : MonoBehaviour
             {
                 if (transitionToHouse)
                 {
-                    city.SetActive(false);
-                    house.SetActive(true);
-                    textoUI.gameObject.SetActive(false);
+                    StartCoroutine(TransitionToHouse());
                 }
                 else
                 {
-                    city.SetActive(true);
-                    house.SetActive(false);
-                    textoUI.gameObject.SetActive(false);
+                    StartCoroutine(TransitionToCity());
                 }
             }
         }
+    }
+
+    IEnumerator TransitionToHouse()
+    {
+        audioPorta.Play();
+        jogador.GetComponent<Player>().enabled = false;
+        transitionAnim.SetTrigger("EClicked");
+        yield return new WaitForSeconds(.5f);
+        city.SetActive(false);
+        house.SetActive(true);
+        textoUI.gameObject.SetActive(false);
+        transitionAnim.SetTrigger("Transition");
+        jogador.GetComponent<Player>().enabled = true;
+    }
+
+    IEnumerator TransitionToCity()
+    {
+        audioPorta.Play();
+        jogador.GetComponent<Player>().enabled = false;
+        transitionAnim.SetTrigger("EClicked");
+        yield return new WaitForSeconds(.5f);
+        house.SetActive(false);
+        city.SetActive(true);
+        textoUI.gameObject.SetActive(false);
+        transitionAnim.SetTrigger("Transition");
+        jogador.GetComponent<Player>().enabled = true;
     }
 
     void OnTriggerEnter(Collider other)

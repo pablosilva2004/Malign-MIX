@@ -16,6 +16,9 @@ public class Player : MonoBehaviour
     float verticalPlayerVelocity;
     void Awake()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         cameraPlayer = Camera.main.transform;
         playerController = GetComponent<CharacterController>();
     }
