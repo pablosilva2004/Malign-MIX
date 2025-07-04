@@ -7,14 +7,22 @@ public class Transition : MonoBehaviour
 {
     [SerializeField] TMP_Text textoUI;
     [SerializeField] GameObject city, house;
-    [SerializeField] GameObject cenaMercado;
+    [SerializeField] GameObject cenaMercado, cenaUI;
     [SerializeField] bool transitionMercado, transitionToHouse, playerInside;
     [SerializeField] Animator transitionAnim;
     [SerializeField] AudioSource audioPorta;
     public GameObject jogador;
+
+    [SerializeField] Material open, closed;
+    MeshRenderer transitionMesh;
+
+    [SerializeField] bool estaDeNoite;
     void Start()
     {
         cenaMercado.SetActive(false);
+        transitionMesh = GetComponent<MeshRenderer>();
+
+        transitionMesh.material = open;
     }
 
     // Update is called once per frame
@@ -35,6 +43,7 @@ public class Transition : MonoBehaviour
             }
             else
             {
+                transitionMesh.material = open;
                 jogador.GetComponent<Player>().enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
