@@ -1,6 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MiniWeapon : MonoBehaviour
 {
@@ -22,7 +22,7 @@ public class MiniWeapon : MonoBehaviour
     bool allowReset = true;
     float shootingDelay = .5f;
 
-    int bulletsPerBurst = 7;
+    int bulletsPerBurst = 1;
     int burstBulletsLeft;
 
     [SerializeField] float spreadIntensity;
@@ -30,14 +30,24 @@ public class MiniWeapon : MonoBehaviour
 
     [SerializeField] GameObject muzzleEffect;
 
+    Animator pistolAnimation;
+
+    [SerializeField] float reloadTime;
+    [SerializeField] int magazineSize, bulletsLeft;
+    bool isReloading;
+
+    [SerializeField] TMP_Text ammoDisplay;
     void Awake()
     {
+        pistolAnimation = GetComponent<Animator>();
         readyToShot = true;
         burstBulletsLeft = bulletsPerBurst;    
     }
 
     void Update()
     {
+        if(bulletsLeft == 0 && isShooting) { SoundsManager.instance.audioEmpty.Play(); }
+
         if (currentShootingMode == ShootingMode.Auto)
         {
             isShooting = Input.GetKey(KeyCode.Mouse0);
@@ -47,18 +57,27 @@ public class MiniWeapon : MonoBehaviour
             isShooting = Input.GetKeyDown(KeyCode.Mouse0);
         }
 
-        if (readyToShot && isShooting)
+        if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !isReloading) { Reloading(); }
+
+        if (readyToShot && !isShooting && !isReloading && bulletsLeft <= 0) { Reloading(); }
+
+        if (readyToShot && isShooting && bulletsLeft > 0)
         {
             burstBulletsLeft = bulletsPerBurst;
             FireWeapon();
-                
         }
+        
+        if(ammoDisplay != null) { ammoDisplay.text = $"{bulletsLeft/bulletsPerBurst}/{magazineSize/bulletsPerBurst}"; }
     }
 
     void FireWeapon()
     {
+        bulletsLeft--;
+        pistolAnimation.SetTrigger("Recoil");
+
         muzzleEffect.GetComponent<ParticleSystem>().Play();
 
+        SoundsManager.instance.audioBullet.PlayOneShot(SoundsManager.instance.audioBullet.clip);
         readyToShot = false;
         Vector3 shootingDirection = CalculateDirectionAndSpread().normalized;
 
@@ -80,6 +99,20 @@ public class MiniWeapon : MonoBehaviour
             burstBulletsLeft--;
             Invoke("FireWeapon", shootingDelay);
         }
+    }
+
+    void Reloading()
+    {
+        SoundsManager.instance.audioReloading.Play();
+
+        isReloading = true;
+        Invoke("ReloadCompleted", reloadTime);
+    }
+
+    void ReloadCompleted()
+    {
+        bulletsLeft = magazineSize;
+        isReloading = false;
     }
 
     void ResetShot()
