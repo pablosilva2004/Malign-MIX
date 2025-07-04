@@ -7,19 +7,20 @@ public class Transition : MonoBehaviour
 {
     [SerializeField] TMP_Text textoUI;
     [SerializeField] GameObject city, house;
+    [SerializeField] GameObject cenaMercado;
     [SerializeField] bool transitionMercado, transitionToHouse, playerInside;
     [SerializeField] Animator transitionAnim;
     [SerializeField] AudioSource audioPorta;
     public GameObject jogador;
     void Start()
     {
-
+        cenaMercado.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerInside)
+        if (Input.GetKeyUp(KeyCode.E) && playerInside)
         {
             if (!transitionMercado)
             {
@@ -31,6 +32,13 @@ public class Transition : MonoBehaviour
                 {
                     StartCoroutine(TransitionToCity());
                 }
+            }
+            else
+            {
+                jogador.GetComponent<Player>().enabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                cenaMercado.SetActive(true);
             }
         }
     }
@@ -63,6 +71,8 @@ public class Transition : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         if (other.gameObject.CompareTag("Player"))
         {
             textoUI.gameObject.SetActive(true);
@@ -72,6 +82,8 @@ public class Transition : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         if (other.gameObject.CompareTag("Player"))
         {
             textoUI.gameObject.SetActive(false);
