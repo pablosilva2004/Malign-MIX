@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Malign MIX/Scenes/SplashScreen.unity
+    guid: 75677bfcc761c4442ae51cbcd6fa954c
+  - enabled: 1
+    path: Assets/Malign MIX/Scenes/Menu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Malign MIX/Scenes/Game.unity
+    guid: ac81b43ac49a081469e1e647750a5d47
+  - enabled: 1
+    path: Assets/Malign MIX/Scenes/Minigame.unity
+    guid: 2eb7ed071e2ae37498fb27661c5aabcd
   m_configObjects: {}

@@ -1,18 +1,37 @@
 using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;    
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadLevel()
     {
-        
+        StartCoroutine(LoadAsynchronously(2));
+    }
+
+    IEnumerator LoadAsynchronously(int index)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(index);
+
+        while (!operation.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    public void SceneryGames()
+    {
+        Application.OpenURL("https://scenery-games.itch.io/");
+    }
+
+    public void Sair()
+    {
+        Application.Quit();
     }
 }
