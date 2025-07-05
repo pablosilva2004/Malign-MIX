@@ -171,8 +171,8 @@ MonoBehaviour:
     y: 0
     width: 1267
     height: 554
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -439,7 +439,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 0
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
@@ -518,14 +518,14 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 953.43555, y: 372.04617, z: -0.0553724}
+    m_Target: {x: 643.8727, y: 501.71613, z: 269.03046}
     speed: 2
-    m_Value: {x: 963.84595, y: 375.3924, z: -0.054023493}
+    m_Value: {x: 643.8727, y: 501.71613, z: 269.03046}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -561,27 +561,27 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 1
+        m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
-    m_ShowGrid: 1
+    m_ShowGrid: 0
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.13180107, y: 0.8223788, z: -0.21201225, w: -0.51124597}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.13180107, y: 0.8223788, z: -0.21201225, w: -0.51124597}
   m_Size:
-    m_Target: 625.35114
+    m_Target: 603.9633
     speed: 2
-    m_Value: 598.4221
+    m_Value: 603.9633
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -843,7 +843,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Malign MIX/Scripts/Minigame
+    - Assets/UnityTechnologies/EffectExamples/FireExplosionEffects/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -851,16 +851,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 69
   m_LastFolders:
-  - Assets/Malign MIX/Scripts/Minigame
+  - Assets/UnityTechnologies/EffectExamples/FireExplosionEffects/Prefabs
   m_LastFoldersGridSize: 69
   m_LastProjectPath: C:\Users\silva\Documents\Projetos\Malign-MIX\Malign MIX
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 64}
-    m_SelectedIDs: 5c890100
-    m_LastClickedID: 100700
-    m_ExpandedIDs: 00000000026300000463000006630000086300000a6300000c6300004063000000ca9a3b
+    scrollPos: {x: 0, y: 356}
+    m_SelectedIDs: ae9c0100
+    m_LastClickedID: 105646
+    m_ExpandedIDs: 00000000026300000463000006630000086300000a6300000c6300000e9c0100129c01002e9c010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -915,7 +915,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1014,7 +1014,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -393028
+  m_LastSelectedObjectID: 125960
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1826,8 +1826,8 @@ MonoBehaviour:
     y: 0
     width: 562
     height: 393
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -1898,7 +1898,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d2d8faff26f1faffc668fbff48eefcff7eeffcffd096feffec99feff48b2feff46b8feff2ef4feff4808ffffbc7dffff2ad4ffff7ce0ffff5cf8ffffe4faffff105d00001a5d00002a5d0000445d0000625d0000945d0000a85d0000d25d0000e65d0000e85d0000
+      m_ExpandedIDs: 6ed8f9ffc4ddf9ff0a61faffd2d8faff26f1faffc668fbff48eefcff7eeffcffd096feffec99feff48b2feff46b8feff2ef4feff4808ffffbc7dffff2ad4ffff7ce0ffff5cf8ffffe4faffff105d00001a5d00002a5d0000445d0000625d0000945d0000a85d0000d25d0000e65d0000e85d00009ceb0100aaeb010008ec010028ec010034ec0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1941,8 +1941,8 @@ MonoBehaviour:
     y: 0
     width: 397
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}

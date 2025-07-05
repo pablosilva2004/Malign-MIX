@@ -21,7 +21,7 @@ public class CapsuleTarget : MonoBehaviour
                 Destroy(gameObject);
             }
 
-            Destroy(collision.gameObject); // Destrói a bala
+            Destroy(collision.gameObject);
         }
     }
 }

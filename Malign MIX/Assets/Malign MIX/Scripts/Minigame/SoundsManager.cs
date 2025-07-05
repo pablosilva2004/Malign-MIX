@@ -9,6 +9,7 @@ public class SoundsManager : MonoBehaviour
     [SerializeField] public AudioSource audioBullet;
     [SerializeField] public AudioSource audioReloading;
     [SerializeField] public AudioSource audioEmpty;
+    [SerializeField] public AudioSource audioImpact;
 
     void Awake()
     {
