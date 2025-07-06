@@ -20,6 +20,7 @@ public class EnemyKillCounter : MonoBehaviour
     public void RegisterKill()
     {
         killCount++;
+        DonateManager.inimigosMortos++;
         UpdateUI();
     }
 

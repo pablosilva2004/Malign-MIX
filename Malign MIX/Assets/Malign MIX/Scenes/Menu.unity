@@ -3611,7 +3611,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e7f7e494a581334498c906bcaedc7a3c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.409
+  m_Volume: 0.134
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5186,7 +5186,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Survive the maximum number of days. \n\nYou are a caffeine addict and
-    you take 10 damage every 30 seconds because of this addiction.\n\nYou need to
+    you take 20 damage every 30 seconds because of this addiction.\n\nYou need to
     buy coffee, soda or energetic at the market near your home to survive, And the
     only way to buy is to stream your favorite game to receive donations.\n\nAh,
     be careful with the Malign MIX."

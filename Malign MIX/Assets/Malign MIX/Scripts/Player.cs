@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     Vector3 playerInputs;
     CharacterController playerController;
-    float playerVelocity = 10f;
+    float playerVelocity = 11f;
     [SerializeField] Transform cameraPlayer;
 
 
