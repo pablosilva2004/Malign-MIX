@@ -9,7 +9,6 @@ public class Transition : MonoBehaviour
     [SerializeField] GameObject city, house;
     [SerializeField] GameObject cenaMercado, cenaUI;
     [SerializeField] bool transitionMercado, transitionToHouse, playerInside;
-    [SerializeField] Animator transitionAnim;
     [SerializeField] AudioSource audioPorta;
     public GameObject jogador;
 
@@ -56,12 +55,10 @@ public class Transition : MonoBehaviour
     {
         audioPorta.Play();
         jogador.GetComponent<Player>().enabled = false;
-        transitionAnim.SetTrigger("EClicked");
         yield return new WaitForSeconds(.5f);
         city.SetActive(false);
         house.SetActive(true);
         textoUI.gameObject.SetActive(false);
-        transitionAnim.SetTrigger("Transition");
         jogador.GetComponent<Player>().enabled = true;
     }
 
@@ -69,12 +66,10 @@ public class Transition : MonoBehaviour
     {
         audioPorta.Play();
         jogador.GetComponent<Player>().enabled = false;
-        transitionAnim.SetTrigger("EClicked");
         yield return new WaitForSeconds(.5f);
         house.SetActive(false);
         city.SetActive(true);
         textoUI.gameObject.SetActive(false);
-        transitionAnim.SetTrigger("Transition");
         jogador.GetComponent<Player>().enabled = true;
     }
 

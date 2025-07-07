@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Malign MIX/Scenes/Game.unity
     guid: ac81b43ac49a081469e1e647750a5d47
   - enabled: 1
-    path: Assets/Malign MIX/Scenes/Minigame.unity
-    guid: 2eb7ed071e2ae37498fb27661c5aabcd
+    path: Assets/Malign MIX/Scenes/GameOver.unity
+    guid: c902e91ecbdb69045b7b42a06ea34058
   m_configObjects: {}

@@ -8,6 +8,14 @@ public class CapsuleTarget : MonoBehaviour
     public int hitCount = 0;
     [SerializeField] TMP_Text enemyKilledText;
 
+    void Update()
+    {
+        if (DonateManager.checagensFeitas == 2)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))

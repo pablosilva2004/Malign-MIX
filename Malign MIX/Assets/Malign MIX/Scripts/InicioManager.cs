@@ -5,7 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject city, house;
-    [SerializeField] GameObject cenaInicio, cenaUI;
+    [SerializeField] GameObject cenaInicio, cenaUI, canvas;
+    [SerializeField] GameObject game1, game2, game3;
+
     public GameObject jogador;
     void Start()
     {
@@ -20,15 +22,20 @@ public class GameManager : MonoBehaviour
 
     IEnumerator AnimInicio()
     {
+        game1.SetActive(true);
+        game2.SetActive(false);
+        game3.SetActive(false);
         jogador.GetComponent<Player>().enabled = false;
         house.SetActive(false);
         city.SetActive(false);
         cenaUI.SetActive(false);
+        canvas.SetActive(false);
         cenaInicio.SetActive(true);
         yield return new WaitForSeconds(28);
         house.SetActive(true);
-        cenaInicio.SetActive(false);
         cenaUI.SetActive(true);
+        cenaInicio.SetActive(false);
+        canvas.SetActive(true);
         jogador.GetComponent<Player>().enabled = true;
     }
 
@@ -38,5 +45,6 @@ public class GameManager : MonoBehaviour
         house.SetActive(true);
         cenaInicio.SetActive(false);
         cenaUI.SetActive(true);
+        canvas.SetActive(true);
     }
 }

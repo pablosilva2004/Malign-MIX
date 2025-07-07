@@ -1,10 +1,12 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public static UIManager instance;
+    //public static UIManager instance;
 
     [SerializeField] int life, maxLife;
     [SerializeField] int constantDamage = 10;
@@ -22,23 +24,27 @@ public class UIManager : MonoBehaviour
     [SerializeField] public static int money = 20;
     [SerializeField] TMP_Text textMoney;
 
-    [SerializeField] int quantidadeCafe, quantidadeRefri, quantidadeEnergetico;
-    [SerializeField] int totalCafe, totalRefri, totalEnergetico;
+    [SerializeField] public static int quantidadeCafe, quantidadeRefri, quantidadeEnergetico;
+    [SerializeField] public static int totalCafe, totalRefri, totalEnergetico;
     [SerializeField] int precoCafe, precoRefri, precoEnergetico;
     [SerializeField] TMP_Text textCafe, textRefri, textEnergetico, textInsuficiente;
-    [SerializeField] AudioSource tomouBebida, comprouBebida;
+    [SerializeField] AudioSource tomouBebida;
 
+    [SerializeField] public static int dias = 1;
+    [SerializeField] TMP_Text textDias;
+    [SerializeField] Animator dieAnimation;
+    [SerializeField] GameObject game1, game2, game3, player, player2, player3;
 
     void Awake()
     {
-        if (instance != null && instance != this)
+        /*if (instance != null && instance != this)
         {
             Destroy(gameObject);
         }
         else
         {
             instance = this;
-        }
+        }*/
 
         if (FindObjectsOfType<UIManager>().Length > 1)
         {
@@ -46,7 +52,7 @@ public class UIManager : MonoBehaviour
             return;
         }
 
-        DontDestroyOnLoad(gameObject);    
+        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
@@ -59,6 +65,14 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
+        if (life <= 0)
+        {
+            Die();
+            sliderLife.gameObject.SetActive(false);
+            life = maxLife;
+        }
+        textDias.text = $"{dias}";
+
         textCafe.text = $"{quantidadeCafe}";
         textRefri.text = $"{quantidadeRefri}";
         textEnergetico.text = $"{quantidadeEnergetico}";
@@ -120,7 +134,7 @@ public class UIManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C) && quantidadeEnergetico > 0 && life < 100)
         {
             tomouBebida.PlayOneShot(tomouBebida.clip);
-            consumiuEnergetico = true;    
+            consumiuEnergetico = true;
             totalEnergetico++;
             quantidadeEnergetico--;
             life = Mathf.Min(life + 50, maxLife);
@@ -131,7 +145,6 @@ public class UIManager : MonoBehaviour
     {
         if (money >= precoCafe)
         {
-            comprouBebida.PlayOneShot(comprouBebida.clip);
             quantidadeCafe++;
             money -= precoCafe;
             textInsuficiente.text = "";
@@ -146,7 +159,6 @@ public class UIManager : MonoBehaviour
     {
         if (money >= precoRefri)
         {
-            comprouBebida.PlayOneShot(comprouBebida.clip);
             quantidadeRefri++;
             money -= precoRefri;
             textInsuficiente.text = "";
@@ -161,7 +173,6 @@ public class UIManager : MonoBehaviour
     {
         if (money >= precoEnergetico)
         {
-            comprouBebida.PlayOneShot(comprouBebida.clip);
             quantidadeEnergetico++;
             money -= precoEnergetico;
             textInsuficiente.text = "";
@@ -172,8 +183,23 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void ResetValues()
+    void Die()
     {
+        StartCoroutine(DieSettings());
+    }
 
+    IEnumerator DieSettings()
+    {
+        dieAnimation.SetTrigger("Morrel");
+        player.GetComponent<Player>().enabled = false;
+        player2.GetComponent<MiniPlayer>().enabled = false;
+        player3.GetComponent<Player>().enabled = false;
+        yield return new WaitForSeconds(2f);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(3);
+
+        while (!operation.isDone)
+        {
+            yield return null;
+        }
     }
 }

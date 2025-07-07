@@ -1,14 +1,18 @@
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using UnityEngine;
+using TMPro;
 
-public class TransitionGame : MonoBehaviour
+public class TransitionToHouseDay : MonoBehaviour
 {
-    [SerializeField] TMP_Text playText;
+    [SerializeField] TMP_Text sleepText;
     bool playerInside;
     [SerializeField] Player jogador;
-    [SerializeField] GameObject game1, game2;
+    [SerializeField] GameObject game3, game1;
+    void Start()
+    {
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -23,7 +27,7 @@ public class TransitionGame : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            playText.gameObject.SetActive(true);
+            sleepText.gameObject.SetActive(true);
             playerInside = true;
         }
     }
@@ -32,7 +36,7 @@ public class TransitionGame : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            playText.gameObject.SetActive(false);
+            sleepText.gameObject.SetActive(false);
             playerInside = false;
         }
     }
@@ -40,11 +44,11 @@ public class TransitionGame : MonoBehaviour
     IEnumerator TransitionToGame()
     {
         jogador.GetComponent<Player>().enabled = false;
-        playText.gameObject.SetActive(false);
+        sleepText.gameObject.SetActive(false);
         yield return new WaitForSeconds(.5f);
-        playText.gameObject.SetActive(true);
+        UIManager.dias++;
         jogador.GetComponent<Player>().enabled = true;
-        game1.SetActive(false);
-        game2.SetActive(true);
+        game3.SetActive(false);
+        game1.SetActive(true);
     }
 }
