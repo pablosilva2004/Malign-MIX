@@ -10,3 +10,5 @@
 ---
 
 O jogo está sendo construído ~~foi construído~~ usando a Unity 2022.3.60f1
+
+# Em breve o Repositório estará PRONTO!
