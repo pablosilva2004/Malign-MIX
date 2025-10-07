@@ -18,7 +18,9 @@ Malign MIX é um jogo open-source criado para a Untitled Game jam #112, também 
 
 # 🎮 JOGUE O NOSSO JOGO
 Malign MIX está disponível para download na nossa página na [Itch.io](https://scenery-games.itch.io/malign-mix), a opção de donate está disponível e com certeza nos ajudará para o crescimento do nosso estúdio!
+
 O convite está feito para você jogar todas as versões, acompanhar os Development Logs e comentar o que você achou do nosso projeto.
+
 Obrigado pela leitura e pelo carinho ❤️
 
 > *- Equipe da Scenery Games, 2025*
