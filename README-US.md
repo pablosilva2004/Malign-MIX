@@ -11,6 +11,5 @@
 </div>
 
 ## Malign MIX is an open-source game created for Untitled Game jam #112, is also part of our history, as it was the first game published by [Scenery Games](https://scenery-games.itch.io/).
-> To read this readme in English, [click here](README-US.md).
 ---
 # IN DEVELOPMENT...
