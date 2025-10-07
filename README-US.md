@@ -16,7 +16,9 @@
 
 # 🎮 PLAY OUR GAME
 Malign MIX is available for download on our [Itch.io](https://scenery-games.itch.io/malign-mix) page, the donate option is available and will certainly help us grow our studio!
+
 You are invited to play all versions, keep up with the Development Logs, and comment on what you think of our project.
+
 Thanks for reading and for your kindness ❤️
 
 > *- Scenery Games Team, 2025*
