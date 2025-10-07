@@ -1,4 +1,4 @@
-**⚠️ATENÇÃO: O projeto está na Unity 2022.3.62f2, versão livre das vulnerabilidades expostas das "antigas" versões 2017.1 e posteriores, não se preocupe :)**
+**⚠️ATENÇÃO: O projeto está na Unity 2022.3.62f2, [versão livre das vulnerabilidades expostas](https://unity.com/pt/security/sept-2025-01) das "antigas" versões 2017.1 e posteriores, não se preocupe :)**
 
 # Malign MIX / Untitled Game Jam #112
 <div align="center">
