@@ -9,5 +9,3 @@
 ---
 
 The game is being built ~~has been built~~ using Unity 2022.3.60f1
-
-# The Repository will be ready SOON!
